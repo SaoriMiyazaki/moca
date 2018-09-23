@@ -305,19 +305,3 @@ function moca_default_option(){
 		'bg_color' => '#f27773'
 	);
 }
-
-function custom_login_logo() {
-	$custom_logo_id = get_theme_mod( 'custom_logo' );
-	$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-	echo $image[0];
-
-	if( !empty( $image[0] ) ){ ?>
-		<style type="text/css">
-			#login h1 a {
-				background-image: url(<?php echo esc_attr( $image[0] ); ?> );
-				background-size:contain;
-			}
-		</style>
-	<?php }
-}
-add_action( 'login_enqueue_scripts', 'custom_login_logo'  );

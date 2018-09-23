@@ -22,7 +22,7 @@
 			} ?>
 			<?php _e( 'Powered by', 'moca' ); ?>
 			<a href="https://wordpress.org/"><?php _e( 'WordPress', 'moca' ); ?></a>
-			<?php _e( 'moca Theme by', 'moca' ); ?> <a href="https://memocarilog.info/" target="_blank"><?php _e( 'memocoarilog', 'moca' ); ?></a>
+			<?php _e( 'moca Theme by', 'moca' ); ?> <a href="https://memocarilog.info/" rel="external nofollow"><?php _e( 'memocoarilog', 'moca' ); ?></a>
 		</p>
 	</div>
 	</footer><!-- footer -->
