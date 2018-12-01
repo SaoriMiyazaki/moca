@@ -2,7 +2,7 @@
 Tags: custom-logo, custom-menu, custom-background, editor-style, footer-widgets, threaded-comments, translation-ready, blog, photography, portfolio
 Requires at least: 4.9
 Tested up to: 4.9
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,9 @@ You can contact me at inquiry form.
 https://memocarilog.info/
 
 == Changelog ==
+v1.14
+* bug fix
+
 v1.13
 * bug fix
 
