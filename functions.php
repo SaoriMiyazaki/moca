@@ -265,6 +265,7 @@ class moca_customize {
 add_action('wp_head', 'moca_head_style');
 function moca_head_style(){
 	$moca_options = moca_options_load();
+	$moca_link_color = '';
 	$moca_link_color = $moca_options['link_color'];
 	if( !empty( $moca_link_color ) ):
 		$moca_link_color = preg_replace("/#/", "", $moca_link_color);
