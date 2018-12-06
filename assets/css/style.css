@@ -852,8 +852,7 @@ body:not(.home) .header {
     font-size: 16px;
     line-height: 1.6;
     font-weight: normal;
-    margin: 0 0 1em;
-    line-height: 1.3; }
+    margin: 0 0 1em; }
     .entry .sec_title a {
       background: linear-gradient(transparent 90%, rgba(242, 119, 115, 0.4) 90%); }
       .entry .sec_title a:hover {
@@ -1320,7 +1319,8 @@ img.alignright {
   width: 100%;
   margin-bottom: 60px;
   position: relative;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  line-height: 1.7; }
   .widget img {
     max-width: 100%;
     height: auto; }
@@ -1330,6 +1330,9 @@ img.alignright {
     max-width: 100%;
     box-sizing: border-box;
     overflow: hidden; }
+  .widget a:hover {
+    background: linear-gradient(transparent 80%, rgba(242, 119, 115, 0.4) 80%);
+    text-decoration: none; }
   .widget .widget-title {
     text-align: center;
     padding-bottom: 25px;
@@ -1352,16 +1355,21 @@ img.alignright {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
   .widget .textwidget img {
-    margin: 7px 0; }
+    margin: 7px auto; }
   .widget .textwidget strong {
     margin: 7px 0;
     display: inline-block; }
+  .widget .textwidget a {
+    background: linear-gradient(transparent 90%, rgba(242, 119, 115, 0.4) 90%); }
+    .widget .textwidget a:hover {
+      background: linear-gradient(transparent 80%, rgba(242, 119, 115, 0.4) 80%);
+      text-decoration: none; }
   .widget ul {
     padding: 0; }
     .widget ul li {
       list-style: none;
       margin-bottom: 5px;
-      line-height: 1.2; }
+      line-height: 1.7; }
   .widget label {
     display: inline-block;
     margin-bottom: 5px; }
@@ -1406,8 +1414,6 @@ img.alignright {
   position: relative; }
   .widget_recent_entries li + li {
     border-top: solid 1px #ddd; }
-  .widget_recent_entries li a {
-    line-height: 1.4; }
   .widget_recent_entries li:first-child {
     margin-top: 0; }
   .widget_recent_entries li .post-date {
@@ -1416,7 +1422,7 @@ img.alignright {
     left: 0;
     display: block;
     padding-top: 5px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-style: italic; }
     .widget_recent_entries li .post-date:before {
       content: "\f073";

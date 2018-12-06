@@ -1,5 +1,5 @@
 == Moca ==
-Tags: custom-logo, custom-menu, custom-background, editor-style, footer-widgets, threaded-comments, translation-ready, blog, photography, portfolio
+Tags: custom-menu, custom-background, editor-style, footer-widgets, threaded-comments, translation-ready, blog, photography, portfolio
 Requires at least: 4.9
 Tested up to: 4.9
 Stable tag: 1.1.4
@@ -12,7 +12,6 @@ Moca is the theme for blogging
 * Responsive Layout
 * Custom Drawer Menu
 * Custom Background
-* Custom Logo
 
 == Copyright ==
 Moca WordPress Theme, Copyright 2018 Saori Miyazaki
@@ -47,6 +46,9 @@ You can contact me at inquiry form.
 https://memocarilog.info/
 
 == Changelog ==
+v1.15
+* CSS adjustment.
+
 v1.14
 * bug fix
 
@@ -57,7 +59,7 @@ v1.12
 * CSS adjustment.
 * Footer link add nofollow.
 
-v1.110
+v1.11
 * Add support privacy policy link.
 
 v1.09
