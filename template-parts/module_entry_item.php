@@ -5,6 +5,7 @@
     } else {
       echo '<div class="no_image"></div>';
     } ?>
+    
     <div class="post_meta">
       <p class="post_posted"><time datetime="<?php the_time( 'c' ); ?>"><?php echo get_the_date(); ?></time></p>
       <div class="post_cat_wrap">
@@ -14,6 +15,7 @@
     <div class="thumb_layer"><a href="<?php the_permalink(); ?>"></a></div>
   </div>
   <div class="sec_body">
+    <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
     <h2 class="sec_title"><a href="<?php the_permalink(); ?> "><?php the_title(); ?></a></h2>
   </div><!-- /.sec_body -->
 </article>

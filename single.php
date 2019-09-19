@@ -27,6 +27,7 @@
 			</div><!-- /.post_thumb_wrap -->
       <div class="title_wrap">
         <?php the_title( '<h1 class="post_title">', '</h1>' ); ?>
+        <?php if(function_exists('the_ratings')) { the_ratings(); } ?>
       </div>
 			<div class="post_content_area">
         <?php get_template_part( 'template-parts/module_sns_buttons' ) ?>

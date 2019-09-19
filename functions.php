@@ -19,6 +19,7 @@ function moca_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'moca_thumb_image', 350, 9999, false );
 	add_image_size( 'moca_thumbnail_avatar', 100, 100, true );
+	//add_theme_support( 'post-thumbnails', array( 'page' ) );
 	/*-------------------------------------------*/
 	/*	Set the default content width.
 	/*-------------------------------------------*/
@@ -306,3 +307,40 @@ function moca_default_option(){
 		'bg_color' => '#f27773'
 	);
 }
+
+//+++++++++++++++++++++++++++++++++++++++++
+//カスタムヘッダー
+
+add_custom_image_header('','admin_header_style');
+
+function admin_header_style() {}
+
+//標準のヘッダー画像を指定
+define('HEADER_IMAGE','%s/images/header.jpg');
+
+//ヘッダー画像の横幅と高さを指定
+define('HEADER_IMAGE_WIDTH','800');
+define('HEADER_IMAGE_HEIGHT','380');
+
+//ヘッダーの文字を隠す
+define('NO_HEADER_TEXT',true);
+
+
+register_post_type(
+    'texture',
+    array(
+        'label' => 'テクスチャ',
+        'public' => true,
+				'show_in_rest' => true,
+    )
+);
+register_taxonomy(
+	'material',
+	array('texture', 'post'),
+	array(
+		'label' => '素材別の分類',
+		'rewrite' => array( 'slug' => 'material' ),
+		'hierarchical' => true,
+		'show_in_rest' => true,
+	)
+);

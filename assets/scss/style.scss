@@ -51,7 +51,9 @@ code,
 li,
 p,
 td,
-th {
+th,
+dt,
+dd {
   font-size: 1.6rem;
 }
 
@@ -943,7 +945,7 @@ body:not(.home) .header {
   }
 
   ol,
-  ul {
+  ul{
     padding: 0;
     margin: 50px 0 30px;
     list-style-position: inside;
@@ -955,6 +957,26 @@ body:not(.home) .header {
       }
     }
   }
+
+  dl{
+    margin: 50px 0 30px;
+    line-height: 1.5;
+    border-top: double 4px #ccc;
+    border-bottom: solid 1px #ccc;
+    dt{
+      padding: 15px;
+      border-bottom: solid 1px #ccc;
+      font-weight: bold;
+    }
+    dd{
+      margin: 0;
+      padding: 15px;
+    }
+    dd + dt{
+      border-top: double 4px #ccc;
+    }
+  }
+
 
   ul {
     li {

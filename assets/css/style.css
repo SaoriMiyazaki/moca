@@ -439,7 +439,9 @@ code,
 li,
 p,
 td,
-th {
+th,
+dt,
+dd {
   font-size: 1.6rem; }
 
 a {
@@ -1116,6 +1118,20 @@ body:not(.home) .header {
     .post_content ol li + li,
     .post_content ul li + li {
       margin-top: 5px; }
+  .post_content dl {
+    margin: 50px 0 30px;
+    line-height: 1.5;
+    border-top: double 4px #ccc;
+    border-bottom: solid 1px #ccc; }
+    .post_content dl dt {
+      padding: 15px;
+      border-bottom: solid 1px #ccc;
+      font-weight: bold; }
+    .post_content dl dd {
+      margin: 0;
+      padding: 15px; }
+    .post_content dl dd + dt {
+      border-top: double 4px #ccc; }
   .post_content ul li {
     list-style: none;
     position: relative;
